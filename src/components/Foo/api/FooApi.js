@@ -1,6 +1,0 @@
-import { get } from "../../../services/backend-requests";
-
-const RESOURCE_ROOT = 'Foo';
-export async function getAll() {
-    return await get(`${RESOURCE_ROOT}/listRecords`);
-}
