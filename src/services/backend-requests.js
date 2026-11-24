@@ -71,3 +71,12 @@ export async function put(relative_url, body, config) {
 export async function del(relative_url) {
     return await createAxiosClient().delete(relative_url);
 }
+export async function getFile(relative_url) {
+    return await createAxiosClient().get(relative_url, { responseType: 'blob' });
+}
+export async function postForm(relative_url, formData, config) {
+    return await createAxiosClient().post(relative_url, formData, {
+        ...config,
+        headers: { 'Content-Type': 'multipart/form-data', ...config?.headers },
+    });
+}

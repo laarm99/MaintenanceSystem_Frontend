@@ -1,8 +1,188 @@
 {
-    "trans.welcome" : "Welcome",
-    "dashboard.next" : "Next",
-    "layoutapp.notifications" : "Notifications",
-    "layoutUtems.home":"Home",
-    "layoutapp.logout":"Logout",
-    "dashboard.login" : "Access to continue"
+    "trans.welcome": "Welcome",
+    "dashboard.next": "Next",
+    "layoutapp.notifications": "Notifications",
+    "layoutapp.logout": "Logout",
+    "dashboard.login": "Access to continue",
+    "app": {
+        "name": "IT Equipment Maintenance",
+        "welcome": "Welcome to the IT Equipment Maintenance Portal"
+    },
+    "common": {
+        "underConstruction": "Module under construction"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "equipment": "Equipment",
+        "calendar": "Calendar",
+        "maintenance": "Maintenance",
+        "catalogs": "Catalogs",
+        "imports": "Data import"
+    },
+    "enums": {
+        "MaintenanceStatus": {
+            "Scheduled": "Scheduled",
+            "Upcoming": "Upcoming",
+            "InProgress": "In progress",
+            "Completed": "Completed",
+            "Overdue": "Overdue",
+            "NotPerformed": "Not performed",
+            "Cancelled": "Cancelled"
+        },
+        "MaintenanceFrequency": {
+            "Monthly": "Monthly",
+            "Bimonthly": "Bimonthly",
+            "Quarterly": "Quarterly",
+            "Semiannual": "Semiannual",
+            "Annual": "Annual"
+        },
+        "CriticalityLevel": {
+            "Low": "Low",
+            "Medium": "Medium",
+            "High": "High",
+            "Critical": "Critical"
+        },
+        "EquipmentStatus": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "OutOfService": "Out of service",
+            "Retired": "Retired",
+            "Replaced": "Replaced",
+            "NotLocated": "Not located"
+        },
+        "PlanStatus": {
+            "Draft": "Draft",
+            "Published": "Published",
+            "Closed": "Closed"
+        },
+        "NonWorkingDayType": {
+            "Holiday": "Holiday",
+            "PlantShutdown": "Plant shutdown",
+            "Other": "Other"
+        },
+        "AuditAction": {
+            "Created": "Created",
+            "Updated": "Updated",
+            "Deleted": "Deleted",
+            "Rescheduled": "Rescheduled",
+            "Started": "Started",
+            "Completed": "Completed",
+            "NotPerformed": "Not performed",
+            "Cancelled": "Cancelled"
+        },
+        "ImportType": {
+            "Sites": "Sites",
+            "Plants": "Plants",
+            "Areas": "Areas",
+            "EquipmentTypes": "Equipment types",
+            "Procedures": "Procedures",
+            "ProcedureChecklistItems": "Procedure checklist",
+            "NonWorkingDays": "Non-working days",
+            "Equipment": "Equipment"
+        },
+        "ImportRowAction": {
+            "Create": "New",
+            "Update": "Update",
+            "Unchanged": "Unchanged",
+            "Error": "Error"
+        }
+    },
+    "imports": {
+        "title": "Data import",
+        "orderHint": "Load the catalogs in this order; each import uses the codes from the previous ones.",
+        "loadError": "Could not get the available imports.",
+        "templateError": "Could not download the template.",
+        "uploadError": "Could not process the file.",
+        "committed": "The import was saved successfully.",
+        "hasErrors": "The file has errors; fix them and validate again.",
+        "column": "Column",
+        "description": "Description",
+        "allowedValues": "Allowed values",
+        "example": "Example",
+        "row": "Row",
+        "key": "Key",
+        "action": "Action",
+        "errors": "Errors",
+        "downloadTemplate": "Download template",
+        "dependsOn": "Load first: {{list}}",
+        "noDependencies": "This import has no dependencies.",
+        "rules": "Columns with * are required. Existing records are updated, new ones are created. All or nothing: if any row has an error nothing is saved.",
+        "uploadTitle": "Upload file",
+        "dragText": "Click or drag the Excel file (.xlsx)",
+        "dragHint": "Validate the file first; Import is enabled when there are no errors.",
+        "validate": "Validate",
+        "import": "Import",
+        "resultTitle": "Result",
+        "saved": "Saved",
+        "notSaved": "Not saved",
+        "readyToImport": "Ready to import",
+        "total": "Total"
+    },
+    "crud": {
+        "new": "New",
+        "edit": "Edit",
+        "delete": "Delete",
+        "save": "Save",
+        "cancel": "Cancel",
+        "search": "Search...",
+        "reload": "Reload",
+        "actions": "Actions",
+        "confirmDelete": "Delete this record?",
+        "saved": "Record saved",
+        "deleted": "Record deleted",
+        "saveError": "The record could not be saved",
+        "deleteError": "The record could not be deleted",
+        "loadError": "The information could not be loaded",
+        "active": "Active",
+        "inactive": "Inactive",
+        "total": "{{total}} records",
+        "newTitle": "New: {{title}}",
+        "editTitle": "Edit: {{title}}",
+        "moveUp": "Move up",
+        "moveDown": "Move down"
+    },
+    "catalogs": {
+        "sites": "Sites",
+        "plants": "Plants",
+        "areas": "Areas",
+        "equipmentTypes": "Equipment types",
+        "procedures": "Procedures",
+        "nonWorkingDays": "Non-working days"
+    },
+    "fields": {
+        "code": "Code",
+        "name": "Name",
+        "timeZone": "Time zone",
+        "isActive": "Active",
+        "site": "Site",
+        "plant": "Plant",
+        "area": "Area",
+        "defaultFrequency": "Default frequency",
+        "equipmentType": "Equipment type",
+        "estimatedDuration": "Estimated duration (min)",
+        "checklist": "Checklist",
+        "checklistItem": "Activity to check",
+        "checklistItemRequired": "Enter the activity",
+        "addChecklistItem": "Add activity",
+        "isRequired": "Required",
+        "description": "Description",
+        "date": "Date",
+        "type": "Type",
+        "year": "Year",
+        "allPlants": "All plants",
+        "allPlantsHint": "Leave empty if it applies to the whole site",
+        "tag": "Tag",
+        "location": "Location",
+        "brand": "Brand",
+        "model": "Model",
+        "serialNumber": "Serial number",
+        "procedure": "Procedure",
+        "responsible": "Responsible",
+        "frequency": "Frequency",
+        "typeDefaultFrequency": "Type default",
+        "criticality": "Criticality",
+        "status": "Status",
+        "hasBackup": "Has backup",
+        "notes": "Notes"
+    }
 }

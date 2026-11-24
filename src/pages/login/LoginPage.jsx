@@ -25,7 +25,7 @@ export default function LoginPage() {
 
 loginCtx(data);
 
-navigate("/homePage");
+navigate("/dashboard");
 
     } catch (error) {
       setLoginErrors(error.response?.data);
@@ -50,12 +50,12 @@ navigate("/homePage");
 
         <img
           src={appLogo}
-          alt="APP Logo"
+          alt="Logo"
           className={styles.loginLogo}
         />
 
         <p>
-          Welcome to APP
+          {t("app.welcome")}
         </p>
 
         <Form onFinish={onFinish}>

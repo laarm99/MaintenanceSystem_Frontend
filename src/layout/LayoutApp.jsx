@@ -68,7 +68,7 @@ export default function AppLayout() {
 
         <Header className={styles.headerStyle}>
 
-          <h3>APP_NAME</h3>
+          <h3>{t("app.name")}</h3>
 
         </Header>
 

@@ -1,8 +1,188 @@
 {
-    "trans.welcome" : "Bienvenido",
-    "dashboard.next" : "Siguiente",
-    "layoutapp.notifications" : "Notificaciones",
-    "layoutUtems.home":"Inicio",
-    "layoutapp.logout":"Cerrar sesion",
-    "dashboard.login" : "Accede para continuar"
+    "trans.welcome": "Bienvenido",
+    "dashboard.next": "Siguiente",
+    "layoutapp.notifications": "Notificaciones",
+    "layoutapp.logout": "Cerrar sesión",
+    "dashboard.login": "Accede para continuar",
+    "app": {
+        "name": "Mantenimiento de Equipos de TI",
+        "welcome": "Bienvenido al Portal de Mantenimiento de Equipos de TI"
+    },
+    "common": {
+        "underConstruction": "Módulo en construcción"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "equipment": "Equipos",
+        "calendar": "Calendario",
+        "maintenance": "Mantenimientos",
+        "catalogs": "Catálogos",
+        "imports": "Carga de datos"
+    },
+    "enums": {
+        "MaintenanceStatus": {
+            "Scheduled": "Programado",
+            "Upcoming": "Próximo",
+            "InProgress": "En proceso",
+            "Completed": "Completado",
+            "Overdue": "Vencido",
+            "NotPerformed": "No realizado",
+            "Cancelled": "Cancelado"
+        },
+        "MaintenanceFrequency": {
+            "Monthly": "Mensual",
+            "Bimonthly": "Bimestral",
+            "Quarterly": "Trimestral",
+            "Semiannual": "Semestral",
+            "Annual": "Anual"
+        },
+        "CriticalityLevel": {
+            "Low": "Baja",
+            "Medium": "Media",
+            "High": "Alta",
+            "Critical": "Crítica"
+        },
+        "EquipmentStatus": {
+            "Active": "Activo",
+            "Inactive": "Inactivo",
+            "OutOfService": "Fuera de servicio",
+            "Retired": "Dado de baja",
+            "Replaced": "Reemplazado",
+            "NotLocated": "No localizado"
+        },
+        "PlanStatus": {
+            "Draft": "Borrador",
+            "Published": "Publicado",
+            "Closed": "Cerrado"
+        },
+        "NonWorkingDayType": {
+            "Holiday": "Día festivo",
+            "PlantShutdown": "Paro de planta",
+            "Other": "Otro"
+        },
+        "AuditAction": {
+            "Created": "Creado",
+            "Updated": "Actualizado",
+            "Deleted": "Eliminado",
+            "Rescheduled": "Reprogramado",
+            "Started": "Iniciado",
+            "Completed": "Completado",
+            "NotPerformed": "No realizado",
+            "Cancelled": "Cancelado"
+        },
+        "ImportType": {
+            "Sites": "Sitios",
+            "Plants": "Plantas",
+            "Areas": "?reas",
+            "EquipmentTypes": "Tipos de equipo",
+            "Procedures": "Procedimientos",
+            "ProcedureChecklistItems": "Checklist de procedimientos",
+            "NonWorkingDays": "D?as inh?biles",
+            "Equipment": "Equipos"
+        },
+        "ImportRowAction": {
+            "Create": "Nuevo",
+            "Update": "Actualizar",
+            "Unchanged": "Sin cambios",
+            "Error": "Con error"
+        }
+    },
+    "imports": {
+        "title": "Carga de datos",
+        "orderHint": "Cargue los cat?logos en este orden; cada carga usa los c?digos de las anteriores.",
+        "loadError": "No se pudieron obtener las cargas disponibles.",
+        "templateError": "No se pudo descargar la plantilla.",
+        "uploadError": "No se pudo procesar el archivo.",
+        "committed": "La carga se guard? correctamente.",
+        "hasErrors": "El archivo tiene errores; corr?jalos y vuelva a validar.",
+        "column": "Columna",
+        "description": "Descripci?n",
+        "allowedValues": "Valores permitidos",
+        "example": "Ejemplo",
+        "row": "Fila",
+        "key": "Llave",
+        "action": "Acci?n",
+        "errors": "Errores",
+        "downloadTemplate": "Descargar plantilla",
+        "dependsOn": "Requiere cargar antes: {{list}}",
+        "noDependencies": "Esta carga no depende de otras.",
+        "rules": "Las columnas con * son obligatorias. Si el registro existe se actualiza, si no se crea. La carga es todo o nada: si alguna fila tiene error no se guarda nada.",
+        "uploadTitle": "Subir archivo",
+        "dragText": "Haga clic o arrastre el archivo Excel (.xlsx)",
+        "dragHint": "Primero valide el archivo; el bot?n Importar se habilita cuando no hay errores.",
+        "validate": "Validar",
+        "import": "Importar",
+        "resultTitle": "Resultado",
+        "saved": "Guardado",
+        "notSaved": "No guardado",
+        "readyToImport": "Listo para importar",
+        "total": "Total"
+    },
+    "crud": {
+        "new": "Nuevo",
+        "edit": "Editar",
+        "delete": "Eliminar",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "search": "Buscar...",
+        "reload": "Recargar",
+        "actions": "Acciones",
+        "confirmDelete": "?Eliminar este registro?",
+        "saved": "Registro guardado",
+        "deleted": "Registro eliminado",
+        "saveError": "No se pudo guardar el registro",
+        "deleteError": "No se pudo eliminar el registro",
+        "loadError": "No se pudo cargar la informaci?n",
+        "active": "Activo",
+        "inactive": "Inactivo",
+        "total": "{{total}} registros",
+        "newTitle": "Nuevo: {{title}}",
+        "editTitle": "Editar: {{title}}",
+        "moveUp": "Subir",
+        "moveDown": "Bajar"
+    },
+    "catalogs": {
+        "sites": "Sitios",
+        "plants": "Plantas",
+        "areas": "?reas",
+        "equipmentTypes": "Tipos de equipo",
+        "procedures": "Procedimientos",
+        "nonWorkingDays": "D?as inh?biles"
+    },
+    "fields": {
+        "code": "C?digo",
+        "name": "Nombre",
+        "timeZone": "Zona horaria",
+        "isActive": "Activo",
+        "site": "Sitio",
+        "plant": "Planta",
+        "area": "?rea",
+        "defaultFrequency": "Frecuencia por defecto",
+        "equipmentType": "Tipo de equipo",
+        "estimatedDuration": "Duraci?n estimada (min)",
+        "checklist": "Checklist",
+        "checklistItem": "Actividad a revisar",
+        "checklistItemRequired": "Capture la actividad",
+        "addChecklistItem": "Agregar actividad",
+        "isRequired": "Obligatorio",
+        "description": "Descripci?n",
+        "date": "Fecha",
+        "type": "Tipo",
+        "year": "A?o",
+        "allPlants": "Todas las plantas",
+        "allPlantsHint": "D?jelo vac?o si aplica a todo el sitio",
+        "tag": "Tag / Etiqueta",
+        "location": "Ubicaci?n",
+        "brand": "Marca",
+        "model": "Modelo",
+        "serialNumber": "No. de serie",
+        "procedure": "Procedimiento",
+        "responsible": "Responsable",
+        "frequency": "Frecuencia",
+        "typeDefaultFrequency": "Por defecto del tipo",
+        "criticality": "Criticidad",
+        "status": "Estatus",
+        "hasBackup": "Tiene respaldo",
+        "notes": "Notas"
+    }
 }
